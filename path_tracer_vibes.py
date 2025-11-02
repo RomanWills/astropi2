@@ -98,7 +98,6 @@ for _ in range(LOOPS):
                     wall_hits_path = True
                     for x in range(len(path)):
                         wall_hits_path = intersect(wall[0], wall[1], path[x-1], path[x])
-                        print(f"Checking path intersect: {x} {path[x-1]} {path[x]} {wall_hits_path}")
                         if wall_hits_path:
                             break
                         
