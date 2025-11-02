@@ -123,9 +123,8 @@ while running:
 
     # Draw path
     if len(path) >= 2:
-        colors = ["red", "blue", "green", "orange", "purple"]
-        mycolor = random.choice(colors)
-        pygame.draw.lines(screen, mycolor, False, path)
+        
+        pygame.draw.lines(screen, "red", False, path)
 
     # Draw walls
     for C, D in walls:
