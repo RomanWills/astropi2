@@ -4,12 +4,12 @@ import random
 import pygame
 from utilities import intersect  # uses your utilities.py intersect()
 
-pygame.init()  # <- actually initialize
+pygame.init()  
 
-WIDTH, HEIGHT = 800, 1000
-LENGTH = 150
-WALL_LENGTH = 10
-LOOPS = 50  # "do this 20 times" (tweak as you like)
+WIDTH, HEIGHT = 1200, 1000
+LENGTH = 100
+WALL_LENGTH = 4
+LOOPS = 20  
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
@@ -123,6 +123,7 @@ while running:
 
     # Draw path
     if len(path) >= 2:
+        
         pygame.draw.lines(screen, "red", False, path)
 
     # Draw walls
